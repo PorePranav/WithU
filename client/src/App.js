@@ -26,11 +26,7 @@ import Users from './components/Admin/Users/Users';
 import AdminCourses from './components/Admin/AdminCourses/AdminCourses';
 import Fundraiser from './components/Blokchain/Fundraiser';
 import Testimonials from './components/Blokchain/Testimonials';
-
-
-
-
-
+import Chatbot from './components/chatbot/chatbot';
 
 function App() {
 
@@ -62,8 +58,8 @@ function App() {
         <Route path ="/admin/createcourse" element={<CreateCourse/>}/>
         <Route path ="/admin/users" element={<Users/>}/>
         <Route path ="/admin/courses" element={<AdminCourses/>}/>
-
-
+       
+ 
 
 
         
@@ -74,7 +70,7 @@ function App() {
         <Route path="/request" element={<Request/>}/>
         <Route path="/fundraiser" element={<Fundraiser/>}/>
         <Route path="/testimonials" element={<Testimonials/>}/>
-
+        <Route path='/chatbot' element = {<Chatbot/>} />
 
         
        
