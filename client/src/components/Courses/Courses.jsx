@@ -35,8 +35,8 @@ const Course = ({
       />
       <Text noOfLines={2} children={description} />
       <HStack>
-        <Text fontWeight="bold" textTransform="uppercase" children="Creator" />
-        <Text textTransform="uppercase" children={Creator} fontFamily="body" />
+        <Text fontWeight="bold" children="Creator: " />
+        <Text children={'WithU'} fontFamily="body" />
       </HStack>
       <Heading
         textAlign="center"
@@ -67,24 +67,13 @@ const Course = ({
 
 const Courses = () => {
   const [keyword, setKeyword] = useState('');
-  const [setCategory] = useState('');
+  const [category, setCategory] = useState('');
 
   const addToPlaylistHandler = () => {
     console.log('Added to playlist');
   };
 
-  const categories = [
-    'Early Literacy',
-    'Math Exploration',
-    'Science Introduction',
-    'Arts and Crafts',
-    'Physical Education',
-    'Life Skills Training',
-    'Computer Basics',
-    'Music and Movement',
-    'Sign Language',
-    'Sports and Games',
-  ];
+  const categories = ['Deaf', 'Dumb', 'Blind'];
 
   return (
     <Container minH="95vh" maxW="container.lg" paddingY="8">
@@ -110,14 +99,14 @@ const Courses = () => {
         alignItems={['center', 'flex-start']}
       >
         <Course
-          title={'Sample'}
-          description={'It is a sample description'}
+          title={'For the Deaf'}
+          description={'Introductory Course for the Deaf'}
           views={23}
           imageSrc={
-            'https://www.careersinaudit.com/getasset/45b80f0b-1410-4675-99e6-c6e2885214d4/'
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVBzB3TEZuFslc42wABH0BnoTi3Th0G7Hoyjd8jP73uQcbx4z085xUNxrNCZJGqZ-jULs&usqp=CAU'
           }
           id={'Sample'}
-          Creator={'Creator name'}
+          Creator={'Creator'}
           lectureCount={'2'}
           addToPlaylistHandler={addToPlaylistHandler}
         />

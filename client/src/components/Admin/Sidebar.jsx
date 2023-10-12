@@ -19,7 +19,7 @@ const Sidebar = () => {
     >
       <LinkButton
         Icon={RiDashboardFill}
-        text="DashBoard"
+        text="Dashboard"
         url={`dashboard`}
         active={location.pathname === '/admin/dashboard'}
       />

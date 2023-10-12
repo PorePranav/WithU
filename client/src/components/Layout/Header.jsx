@@ -55,19 +55,23 @@ const Header = () => {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay backdropFilter={`blur(3px)`} />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth={`1px`}> Course Bundler</DrawerHeader>
+          <DrawerHeader borderBottomWidth={`1px`}>With U</DrawerHeader>
           <DrawerBody>
             <VStack spacing={`4`} alignItems={`flex-start`}>
               <LinkButton onClose={onClose} url="/" title="Home" />
               <LinkButton
                 onClose={onClose}
                 url="/courses"
-                title=" Browerse all Courses"
+                title="All Courses"
               />
-              <LinkButton onClose={onClose} url="/request" title="Request" />
+              <LinkButton
+                onClose={onClose}
+                url="/request"
+                title="Request A Course"
+              />
               <LinkButton onClose={onClose} url="/about" title="About" />
               <LinkButton onClose={onClose} url="/contact" title="Contact" />
-              <LinkButton onClose={onClose} url="/chatbot" title="CHAT" />
+              <LinkButton onClose={onClose} url="/chatbot" title="Chat" />
 
               <LinkButton
                 onClose={onClose}
@@ -77,7 +81,7 @@ const Header = () => {
               <LinkButton
                 onClose={onClose}
                 url="/testimonials"
-                title="Testimonial"
+                title="Testimonials"
               />
 
               <HStack
@@ -91,14 +95,14 @@ const Header = () => {
                     <VStack>
                       <HStack>
                         <Link onClick={onClose} to="profile">
-                          <Button colorScheme={`yellow`}>profile </Button>
+                          <Button colorScheme={`yellow`}>Profile </Button>
                         </Link>
 
                         <p> or </p>
                         <RiLogoutBoxLine />
 
                         <Button colorScheme={`yellow`} onClick={logoutHandler}>
-                          LogOut{' '}
+                          Logout{' '}
                         </Button>
                       </HStack>
 
@@ -106,7 +110,7 @@ const Header = () => {
                         <Link onClick={onClose} to="/admin/dashboard">
                           <Button colorScheme={`purple`} variant={`ghost`}>
                             <RiDashboardFill style={{ margin: `4px` }} />
-                            DashBoard
+                            Admin Dashboard
                           </Button>
                         </Link>
                       )}

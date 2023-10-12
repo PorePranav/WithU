@@ -43,5 +43,3 @@ const Fundraiser = () => {
 };
 
 export default Fundraiser;
-
-// fontSize="lg"

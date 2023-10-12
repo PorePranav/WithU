@@ -1,33 +1,26 @@
 import { Grid, Box, Text, Heading, VStack } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import IntroVideo from '../../assets/videos/IntroVideo.mp4';
+import Dumb1 from '../../assets/videos/dumb1.mp4';
+import Dumb2 from '../../assets/videos/dumb2.mp4';
 
 const CoursePage = () => {
   const [lectureNumber, setLectureNumber] = useState(0);
 
   const lectures = [
     {
-      _id: 'asdfga',
-      title: 'sample1',
-      description: 'sample sample he kya he be',
+      _id: '1',
+      title: 'For The Dumb',
+      description: 'Letters of English for the dumb Part 1.',
       video: {
-        url: 'sass',
+        url: Dumb1,
       },
     },
     {
-      _id: 'asdfga',
-      title: 'sample2',
-      description: 'sample sample he kya he be',
+      _id: '2',
+      title: 'For The Dumb',
+      description: 'Letters of English for the dumb Part 1.',
       video: {
-        url: 'sass',
-      },
-    },
-    {
-      _id: 'asdfga',
-      title: 'sample2',
-      description: 'sample sample he kya he be',
-      video: {
-        url: 'sass',
+        url: Dumb2,
       },
     },
   ];
@@ -41,14 +34,10 @@ const CoursePage = () => {
           controlsList="nodownload noremoteplayback "
           disablePictureInPicture
           disableRemotePlayback
-          src={IntroVideo}
+          src={lectures[lectureNumber].video.url}
         ></video>
-        <Heading
-          m="4"
-          children={`#${lectureNumber + 1} ${lectures[lectureNumber].title}`}
-        />
 
-        <Heading m="4" children="Description" />
+        <Heading m="4" children={lectures[lectureNumber].title} />
         <Text m={`4`} children={lectures[lectureNumber].description} />
       </Box>
       <VStack>

@@ -8,13 +8,10 @@ config({
 });
 const app = express();
 
-// using middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
-
-// importing and using routes
 
 import course from "./routes/courseRoutes.js";
 import user from "./routes/userRoutes.js";
