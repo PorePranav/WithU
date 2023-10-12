@@ -67,11 +67,7 @@ const Header = () => {
               <LinkButton onClose={onClose} url="/request" title="Request" />
               <LinkButton onClose={onClose} url="/about" title="About" />
               <LinkButton onClose={onClose} url="/contact" title="Contact" />
-              <LinkButton
-                onClose={onClose}
-                url="/chatbot"
-                title="CHAT"
-              />
+              <LinkButton onClose={onClose} url="/chatbot" title="CHAT" />
 
               <LinkButton
                 onClose={onClose}
@@ -83,7 +79,7 @@ const Header = () => {
                 url="/testimonials"
                 title="Testimonial"
               />
-             
+
               <HStack
                 justifyContent={`space-evenly`}
                 position={`absolute`}

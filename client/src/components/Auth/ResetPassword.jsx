@@ -1,13 +1,13 @@
 import { Container, Heading, Input, VStack, Button } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
-const ForgetPassword = () => {
-  const [email, setEmail] = useState('');
+const ResetPassword = () => {
+  const [password, setPassword] = useState('');
   return (
     <Container py={`16`} h={`90vh`}>
       <form>
         <Heading
-          children="Forget Password"
+          children="Rest password"
           my="16"
           textTransform={'uppercase'}
           textAlign={[`center`, `left`]}
@@ -15,20 +15,20 @@ const ForgetPassword = () => {
         <VStack spacing={'8'}>
           <Input
             required
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            placeholder="abc@gmail.com"
-            type={`email`}
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            placeholder="new password"
+            type={`password`}
             focusBorderColor="yellow.500"
           />
         </VStack>
         <Button type="sumbit" w={`full`} colorScheme={`yellow`}>
           {' '}
-          Send Rest Link{' '}
+          Reset Paaword{' '}
         </Button>
       </form>
     </Container>
   );
 };
 
-export default ForgetPassword;
+export default ResetPassword;

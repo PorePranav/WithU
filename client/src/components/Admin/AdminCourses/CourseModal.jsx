@@ -77,18 +77,15 @@ const CourseModal = ({
 
               <Heading children={'Lectures'} size="lg" />
 
-           
-                <VideoCard
-               
-                  title={"react"}
-                  description={"msdmkldsmlks"}
-                  num={ 1}
-                  lectureId={"nvsmlvsfmo"}
-                  courseId={id}
-                  deleteButtonHandler={deleteButtonHandler}
-                  loading={loading}
-                />
-              
+              <VideoCard
+                title={'react'}
+                description={'msdmkldsmlks'}
+                num={1}
+                lectureId={'nvsmlvsfmo'}
+                courseId={id}
+                deleteButtonHandler={deleteButtonHandler}
+                loading={loading}
+              />
             </Box>
 
             <Box>
