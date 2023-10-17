@@ -29,9 +29,9 @@ const Home = () => {
           spacing={['16', '56']}
         >
           <VStack width={'full'} alignItems={[`center`, `flex-end`]}>
-            <Heading children="WITH-U " size={`2xl`} />
+            <Heading children="With-U " size={`2xl`} />
 
-            <Text children="Together, for Your Child's Bright Future " />
+            <Text children="Together, For Your Child's Bright Future " />
             <Link to="/courses">
               <Button size={'lg'} colorScheme={`yellow`}>
                 {' '}
@@ -52,9 +52,8 @@ const Home = () => {
       <Box padding={`8`} bg={`blackAlpha.800`}>
         <Heading
           textAlign={`center`}
-          fontFamily={`body`}
           color={`yellow.400`}
-          children="Our brands"
+          children="Our Brands"
         />
         <HStack
           className="brands"

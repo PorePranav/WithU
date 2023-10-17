@@ -28,7 +28,6 @@ const Request = () => {
               id="name"
               value={name}
               onChange={e => setName(e.target.value)}
-              placeholder="abc...."
               type={`text`}
               focusBorderColor="yellow.500"
             />
@@ -40,7 +39,6 @@ const Request = () => {
               id="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
-              placeholder="Email@gmail.com"
               type={`email`}
               focusBorderColor="yellow.500"
             />
@@ -53,7 +51,6 @@ const Request = () => {
               id="course"
               value={course}
               onChange={e => setCourse(e.target.value)}
-              placeholder=" Explain Your Course .... "
               type={`text`}
               focusBorderColor="yellow.500"
             />
@@ -64,7 +61,7 @@ const Request = () => {
             Send Mail{' '}
           </Button>
           <Box my={`4`}>
-            See Available Courses !{``}{' '}
+            See Available Courses!{``}{' '}
             <Link to="/courses">
               <Button colorScheme={`yellow`} variant={`link`}>
                 {' '}

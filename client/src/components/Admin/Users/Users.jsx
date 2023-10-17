@@ -21,7 +21,7 @@ import Sidebar from '../Sidebar';
 const Users = () => {
   const users = [
     {
-      _id: 'adajhdasbakjsjashgiasjdklas',
+      _id: 'amitansu-p',
       name: 'amitansu',
       role: 'admin',
       subscription: {
@@ -48,7 +48,6 @@ const Users = () => {
     >
       <Box p={['0', '16']} overflow="auto">
         <Heading
-          textTransform={`uppercase`}
           children="All Users "
           my={`16`}
           textAlign={['center', 'left']}
@@ -56,7 +55,7 @@ const Users = () => {
 
         <TableContainer w={['100vw', 'full']}>
           <Table variant={'simple'} size="lg">
-            <TableCaption>All Available Users in the Database</TableCaption>
+            <TableCaption>All available users in the database</TableCaption>
 
             <Thead>
               <Tr>

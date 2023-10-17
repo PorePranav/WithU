@@ -8,7 +8,7 @@ const Fundraiser = () => {
     >
       <VStack spacing={4} align="center" flex="1">
         <Heading as="h1" size="xl">
-          BLOCKCHAIN FUNDRAISER
+          Blockchain Fundraiser
         </Heading>
         <Text fontSize="lg">
           Your platform for transparent and secure fundraising using blockchain

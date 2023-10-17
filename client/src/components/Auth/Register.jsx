@@ -18,7 +18,6 @@ export const fileUploadCss = {
   border: `none`,
   height: `100%`,
   color: `#ECC94B`,
-  backgroundColor: `white`,
 };
 
 const fileUploadStyle = {

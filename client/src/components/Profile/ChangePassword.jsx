@@ -9,7 +9,6 @@ const ChangePassword = () => {
     <Container py={`16`} h={'90vh'}>
       <form>
         <Heading
-          textTransform={`uppercase`}
           children="Change Password"
           my={`16`}
           textAlign={[`center`, `left`]}

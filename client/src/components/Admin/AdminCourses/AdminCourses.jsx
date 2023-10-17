@@ -24,13 +24,13 @@ import CourseModal from './CourseModal';
 const AdminCourses = () => {
   const courses = [
     {
-      _id: 'adajhdasbakjsjashgiasjdklas',
+      _id: 'react-course',
       title: 'React Course',
       category: 'Web Develepment',
       poster: {
         url: '  https://www.careersinaudit.com/getasset/45b80f0b-1410-4675-99e6-c6e2885214d4/ ',
       },
-      createdBy: 'amitansu priyadarsan',
+      createdBy: 'Amitansu Priyadarsan',
       views: 123,
       numOfVideos: 12,
     },
@@ -63,7 +63,6 @@ const AdminCourses = () => {
     >
       <Box p={['0', '8']} overflow="auto">
         <Heading
-          textTransform={`uppercase`}
           children="All Courses "
           my={`16`}
           textAlign={['center', 'left']}

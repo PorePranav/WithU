@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <Container h={`92vh`}>
       <VStack h={`full`} justifyContent={`center`} spacing="16">
-        <Heading children="Contact US" />
+        <Heading children="Contact Us" />
         <form style={{ width: `100%` }}>
           <Box marginY={`4`}>
             <FormLabel htmlFor="name" children="Name" />
@@ -28,7 +28,6 @@ const Contact = () => {
               id="name"
               value={name}
               onChange={e => setName(e.target.value)}
-              placeholder="Email@gmail.com"
               type={`text`}
               focusBorderColor="yellow.500"
             />
@@ -40,7 +39,6 @@ const Contact = () => {
               id="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
-              placeholder="Email@gmail.com"
               type={`email`}
               focusBorderColor="yellow.500"
             />
@@ -53,7 +51,6 @@ const Contact = () => {
               id="message"
               value={message}
               onChange={e => setMessage(e.target.value)}
-              placeholder="Your Message .... "
               type={`text`}
               focusBorderColor="yellow.500"
             />
@@ -64,7 +61,7 @@ const Contact = () => {
             Send Mail{' '}
           </Button>
           <Box my={`4`}>
-            Request for a Course ?{``}{' '}
+            Request for a Course?{``}{' '}
             <Link to="/request">
               <Button colorScheme={`yellow`} variant={`link`}>
                 {' '}

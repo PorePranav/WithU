@@ -11,7 +11,6 @@ import {
   HStack,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import IntroVideo from '../../assets/videos/IntroVideo.mp4';
 import { RiSecurePaymentFill } from 'react-icons/ri';
 import vg from '../../assets/images/lion.png';
 
@@ -25,15 +24,15 @@ const Founder = () => (
         objectFit={`contain`}
       />
 
-      <Text children={'TEAM LIONS '} opacity={`0.75`} />
+      <Text children={'Team Lions'} opacity={`0.75`} />
     </VStack>
     <VStack
       justifyContent="center"
       alignItems={['center', 'flex-start']}
       spacing={4}
     >
-      <Heading size="xl">TEAM LIONS</Heading>
-      <Text size={{ sm: 'sm', md: 'md' }}>Hi, We Are Team Lions!</Text>
+      <Heading size="xl">Team Lions</Heading>
+      <Text size={{ sm: 'sm', md: 'md' }}>Hello, We Are Team Lions!</Text>
       <Text>
         We are a dynamic group of individuals with a shared mission: to break
         down barriers in education and make quality content accessible to all.
@@ -84,31 +83,13 @@ const About = () => {
           team to support parents and caregivers of specially-abled children.
         </Text>
         <Link to="/subscribe">
-          <Button variant={'ghost'} colorScheme="yellow">
-            CheckOut OUR Plan
-          </Button>
+          <Button colorScheme="yellow">Checkout Our Plans</Button>
         </Link>
       </Stack>
-      <Stack>
-        <Box>
-          <video
-            controls
-            controlsList="nodownload nofulscreen noremoteplayback "
-            disablePictureInPicture
-            disableRemotePlayback
-            src={IntroVideo}
-          ></video>
-        </Box>
-      </Stack>
-      <TandC TermsAndCondition={`TermsAndCondition`} />
+      <TandC />
       <HStack my={`4`} p={`4`}>
         <RiSecurePaymentFill />
-        <Heading
-          size={`xs`}
-          fontFamily={`sans-serif`}
-          textTransform={`uppercase`}
-          children={`Payment is secured by Razorpay `}
-        />
+        <Heading size={`xs`} children={`Payment is secured by Razorpay `} />
       </HStack>
     </Container>
   );

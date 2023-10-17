@@ -21,28 +21,7 @@ const CreateCourse = () => {
   const [setImage] = useState('');
   const [imagePrev, setImagePrev] = useState('');
 
-  const categories = [
-    'Web Development',
-    'Artificial Intelligence',
-    'Data Structures & Algorithms',
-    'App Development',
-    'Data Science',
-    'Game Development',
-    'Early Childhood Education',
-    'Special Education',
-    'Creative Arts',
-    'Physical Education',
-    'Science & Nature',
-    'Mathematics',
-    'Social Skills & Communication',
-    'Life Skills & Independence',
-    'Music & Movement',
-    'Sign Language',
-    'Sensory Exploration',
-    'History & Culture',
-    'Problem Solving & Critical Thinking',
-    'Career Development',
-  ];
+  const categories = ['Deaf', 'Dumb', 'Blind'];
 
   const changeImageHandler = e => {
     const file = e.target.files[0];
@@ -66,7 +45,6 @@ const CreateCourse = () => {
       <Container py={'16'}>
         <form>
           <Heading
-            textTransform={'uppercase'}
             children="Create Course "
             my={'16'}
             textAlign={[`center`, `left`]}
@@ -77,24 +55,20 @@ const CreateCourse = () => {
               onChange={e => setTitle(e.target.value)}
               placeholder=" Title"
               type={`text`}
-              focusBorderColor="purple.300"
             ></Input>
             <Input
               value={description}
               onChange={e => setDescription(e.target.value)}
               placeholder="Description"
               type={'text'}
-              focusBorderColor="purple.300"
             />
             <Input
               value={createdBy}
               onChange={e => setCreatedBy(e.target.value)}
               placeholder="Creator Name"
               type={'text'}
-              focusBorderColor="purple.300"
             />
             <Select
-              focusBorderColor="purple.300"
               value={category}
               onChange={e => setCategory(e.target.value)}
             >
@@ -111,11 +85,9 @@ const CreateCourse = () => {
               accept="image/*"
               required
               type={'file'}
-              focusBorderColor="purple.300"
               css={{
                 '&::file-selector-button': {
                   ...fileUploadCss,
-                  color: 'purple',
                 },
               }}
               onChange={changeImageHandler}
@@ -123,7 +95,7 @@ const CreateCourse = () => {
             {imagePrev && (
               <Image src={imagePrev} boxSize="64" objectFit={'contain'} />
             )}
-            <Button w="full" colorScheme={'purple'} type="submit">
+            <Button w="full" type="submit">
               Create
             </Button>
           </VStack>

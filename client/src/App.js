@@ -27,6 +27,7 @@ import AdminCourses from './components/Admin/AdminCourses/AdminCourses';
 import Fundraiser from './components/Blockchain/Fundraiser';
 import Testimonials from './components/Blockchain/Testimonials';
 import Chatbot from './components/chatbot/chatbot';
+import './styles.css';
 
 function App() {
   window.addEventListener(`contextmenu`, e => {

@@ -53,7 +53,7 @@ const Profile = () => {
 
   return (
     <Container minH={`100vh`} maxW={`container.lg`} py="8">
-      <Heading children="Profile" m="8" textTransform={`uppercase`} />
+      <Heading children="Profile" m="8" />
 
       <Stack
         justifyContent={`flex-start`}
@@ -71,25 +71,22 @@ const Profile = () => {
 
         <VStack spacing={`4`} alignItems={['center', 'flex-start']}>
           <HStack>
-            <Text children={`Name-`} fontWeight={`bold`} />
+            <Text children={`Name:`} fontWeight={`bold`} />
             <Text children={user.name} />
           </HStack>
           <HStack>
-            <Text children={`Email-`} fontWeight={`bold`} />
+            <Text children={`Email:`} fontWeight={`bold`} />
             <Text children={user.email} />
           </HStack>
           <HStack>
-            <Text children={`Created At-`} fontWeight={`bold`} />
+            <Text children={`Created On:`} fontWeight={`bold`} />
             <Text children={user.createdAt.split('T')[0]} />
           </HStack>
           {user.role !== 'admin' && (
             <HStack>
-              <Text children="Subscription" fontFamily={`bold`} />
+              <Text children="Subscription" fontWeight={`bold`} />
               {user.subscription.status === 'active' ? (
-                <Button color={`yellow.500`} variant={`unstyled`}>
-                  {' '}
-                  Cancel The Subscription
-                </Button>
+                <Button color={`yellow.500`}> Cancel The Subscription</Button>
               ) : (
                 <Link to="/subscribe">
                   <Button colorScheme={`yellow`}> Subscribe</Button>
@@ -109,7 +106,7 @@ const Profile = () => {
         </VStack>
       </Stack>
 
-      <Heading children={`Playlist`} size={`md`} my="8" />
+      <Heading children={`Your Playlists`} size={`md`} my="8" />
       {user.playlist.length > 0 && (
         <Stack
           direction={['column', 'row']}

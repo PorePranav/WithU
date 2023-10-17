@@ -1,7 +1,7 @@
 import { Grid, Box, Text, Heading, VStack } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import Dumb1 from '../../assets/videos/dumb1.mp4';
-import Dumb2 from '../../assets/videos/dumb2.mp4';
+import Deaf1 from '../../assets/videos/dumb1.mp4';
+import Deaf2 from '../../assets/videos/dumb2.mp4';
 
 const CoursePage = () => {
   const [lectureNumber, setLectureNumber] = useState(0);
@@ -9,19 +9,21 @@ const CoursePage = () => {
   const lectures = [
     {
       _id: '1',
-      title: 'For The Dumb',
+      title: 'For The Deaf',
       description: 'Letters of English for the dumb Part 1.',
       video: {
-        url: Dumb1,
+        url: Deaf1,
       },
+      category: 'deaf',
     },
     {
       _id: '2',
-      title: 'For The Dumb',
+      title: 'For The Deaf',
       description: 'Letters of English for the dumb Part 1.',
       video: {
-        url: Dumb2,
+        url: Deaf2,
       },
+      category: 'deaf',
     },
   ];
 
